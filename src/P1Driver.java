@@ -17,23 +17,23 @@ public class P1Driver {
     private static final String FILENAME = "inputData.txt";
     private static ArrayList <Employee> Employees2015;
     private static ArrayList <Employee> Employees2016;
-    private static String[] Employee;
+    private static String[] LINEREAD;
 
     public static void main(String[] args) throws IOException {
 
         Employees2015 = new ArrayList<Employee>();
         Employees2016 = new ArrayList<Employee>();
-        BufferedReader bufferedReader = new BufferedReader( new FileReader( FILENAME ) );
+        LINEREAD = new String[500];
+        int i = 0;
+        BufferedReader bufferedReader = new BufferedReader( new FileReader(FILENAME ) );
 
         String LINE = bufferedReader.readLine();
+        
 
-            while (LINE != null) {
-                
+        bufferedReader.close();
 
-                LINE = bufferedReader.readLine();
 
-            }
-
+        System.out.println(LINE);
 
  
 
