@@ -22,6 +22,7 @@ public class Salesman extends Employee {
         int BONUSRATE = 2;
         int BASEPAY = super.annualSalary();
 
+        //decision structure
         if (soldItems >= 300)
         {
             COMMISSION = BONUSRATE * getMonthlySalary();
@@ -40,9 +41,10 @@ public class Salesman extends Employee {
 
     }
 
+    //overide tostring method
     @Override
     public String toString(){
-        return super.toString() + "Number of items sold: " + soldItems + "\n";
+        return super.toString() + "\nNumber of items sold: " + soldItems + "\n";
     }
 
 }
