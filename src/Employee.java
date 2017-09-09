@@ -15,16 +15,13 @@ public class Employee {
         this.monSalary = salary;
     }
 
-    /**
-     * It returns the salary for a whole year
-     */
+    //annual salary
     public int annualSalary() {
         return monSalary * 12;
     }
 
-    /**
-     * returns a string containing the name and monthly salary
-     */
+   //to string
+    @Override
     public String toString() {
         String toReturn;
         toReturn = "Name: " + Ename + "\n";
