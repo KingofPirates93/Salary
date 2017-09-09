@@ -1,41 +1,35 @@
 /**
- * Program: Salary Calc
+ * Program: Salary Calculator
  * Package: Default
  * Class: Employee
  * Author: Swapnil Patel
  * Date: 9/6/2017
  */
 public class Employee {
+    String Ename;
+    int monSalary;
 
-    //global var.
-    private String eName;
-    private int monthlySalary;
-
-    //Accessor and Mutator
-    public String geteName() {return eName;}
-
-    public void seteName(String eName) {this.eName = eName;}
-
-    public int getMonthlySalary() {return monthlySalary;}
-
-    public void setMonthlySalary(int monthlySalary) {this.monthlySalary = monthlySalary;}
-
-    //constructor
-    public Employee(String NAME, int MONSALARY){
-
-        this.eName = NAME;
-        this.monthlySalary = MONSALARY;
+  //CONSTRUCTOR
+    public Employee(String name, int salary) {
+        this.Ename = name;
+        this.monSalary = salary;
     }
-    //Annual Salary member method
-    public int annualSalary(){return monthlySalary * 12;}
 
-    //toString for name and salary
-    @Override
+    /**
+     * It returns the salary for a whole year
+     */
+    public int annualSalary() {
+        return monSalary * 12;
+    }
+
+    /**
+     * returns a string containing the name and monthly salary
+     */
     public String toString() {
-        return super.toString() + "Name: " + eName
-                + "\n"
-                + "Monthly Salary: " + monthlySalary;
-
+        String toReturn;
+        toReturn = "Name: " + Ename + "\n";
+        toReturn += "Monthly Salary: $" + monSalary + "\n";
+        return toReturn;
     }
-
 }
+

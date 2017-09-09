@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0">
+      <entry_point TYPE="field" FQNAME="P1Driver Get2016AVGSALARY" />
+      <entry_point TYPE="field" FQNAME="P1Driver Get2015AVGSALARAY" />
+    </entry_points>
+    <pattern value="Employee" method="Employee" />
+    <pattern value="Employee" method="setMonthlySalary" />
+    <pattern value="Employee" method="seteName" />
+    <pattern value="Employee" method="geteName" />
+    <pattern value="Employee" />
+    <pattern value="Executive" method="annExecSalary" />
+    <pattern value="Executive" />
+    <pattern value="P1Driver" method="main" />
+    <pattern value="P1Driver" />
+    <pattern value="Salesman" method="annSalesmanSalary" />
+    <pattern value="Salesman" />
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>

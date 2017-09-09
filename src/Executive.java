@@ -9,7 +9,7 @@
 public class Executive extends Employee {
 
     //global var
-    int STOCK;
+    private final int STOCK;
 
     //constructor
     public Executive(String NAME, int MONSALARY, int stockPrice){

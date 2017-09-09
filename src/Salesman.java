@@ -8,7 +8,7 @@
  */
 public class Salesman extends Employee {
     //global var
-    int soldItems;
+    private final int soldItems;
 
     //constructor
     public Salesman(String NAME, int MONSALARY, int SoldItems) {
@@ -25,11 +25,11 @@ public class Salesman extends Employee {
         //decision structure
         if (soldItems >= 300)
         {
-            COMMISSION = BONUSRATE * getMonthlySalary();
+            COMMISSION = BONUSRATE * monSalary;
         }
-        else if (soldItems > 200 && soldItems < 300 )
+        else if (soldItems > 200)
         {
-            COMMISSION += getMonthlySalary();
+            COMMISSION += monSalary;
         }
 
         else if (soldItems < 200)
